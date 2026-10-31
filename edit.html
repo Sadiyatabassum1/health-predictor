@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="card">
+  <h2>Edit record: {{ p.full_name }}</h2>
+  <form method="post" novalidate>
+    {% include "_fields.html" %}
+    <div class="actions">
+      <button type="submit">Update</button>
+      <a class="btn btn-secondary" href="{{ url_for('index') }}">Cancel</a>
+    </div>
+    <p class="hint">Remarks are regenerated automatically if date of birth or blood values change.</p>
+  </form>
+</section>
+{% endblock %}

@@ -1,0 +1,26 @@
+<div class="grid">
+  <div>
+    <label for="full_name">Full name</label>
+    <input id="full_name" name="full_name" value="{{ form.get('full_name', '') }}" required>
+  </div>
+  <div>
+    <label for="dob">Date of birth (dd/mm/yyyy)</label>
+    <input id="dob" name="dob" placeholder="dd/mm/yyyy" value="{{ form.get('dob', '') }}" required>
+  </div>
+  <div>
+    <label for="email">Email address</label>
+    <input id="email" name="email" value="{{ form.get('email', '') }}" required>
+  </div>
+  <div>
+    <label for="glucose">Glucose (mg/dL)</label>
+    <input id="glucose" name="glucose" value="{{ form.get('glucose', '') }}" required>
+  </div>
+  <div>
+    <label for="haemoglobin">Haemoglobin (g/dL)</label>
+    <input id="haemoglobin" name="haemoglobin" value="{{ form.get('haemoglobin', '') }}" required>
+  </div>
+  <div>
+    <label for="cholesterol">Cholesterol (mg/dL)</label>
+    <input id="cholesterol" name="cholesterol" value="{{ form.get('cholesterol', '') }}" required>
+  </div>
+</div>
